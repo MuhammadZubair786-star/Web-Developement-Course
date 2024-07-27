@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Class Selectors */
+      .red {
+        background-color: red;
+      }
+      /* Id Selectors  */
+      #hotpink {
+        background-color: hotpink;
+      }
+      /* Element Selectors */
+      div {
+        background-color: aqua;
+      }
+      /* unversial Selectors */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* child Selectors */
+      div > p {
+        background-color: blue;
+      }
+      /* Descent Selectors */
+      div p {
+        background-color: pink;
+      }
+      /* Pseudo Selectors */
+      a:visited {
+        background-color: purple;
+      }
+      a:link {
+        background-color: greenyellow;
+      }
+      a:hover {
+        background-color: blueviolet;
+      }
+      a:active {
+        background-color: violet;
+      }
+      p:first-child {
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <div>Lorem ipsum dolor sit.</div>
+    <p class="red">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aspernatur
+      sed reprehenderit!
+    </p>
+    <p id="hotpink">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam
+      repellat.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+        assumenda ipsam quaerat.
+      </p>
+    </div>
+    <a href="https://www.google.com/">google</a>
+    <a href="https://www.facebook.com/">facebook</a>
+    <a href="https://www.youtube.com/">youtube</a>
+  </body>
+</html>

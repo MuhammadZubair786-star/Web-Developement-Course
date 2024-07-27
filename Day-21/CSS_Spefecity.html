@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Specifty</title>
+    <style>
+      /* the specifty 1 */
+      h1 {
+        color: aqua;
+      }
+      /* the speceifty 10 */
+      .cred {
+        color: red;
+      }
+      /* the speceifty 10 */
+      .cblue {
+        color: blue;
+      }
+      /* the speceifty 10 */
+      .cpurple {
+        color: purple;
+      }
+      /* the specfity 10 */
+      [data-x="a"] {
+        color: blueviolet;
+      }
+      /* the specfity 1 10 10 10 10 = 41 */
+      a.class.df[herf]:hover {
+        color: hotpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="cred cblue cpurple" data-x="a">CSS Speceifty</h1>
+  </body>
+</html>

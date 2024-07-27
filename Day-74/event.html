@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .child {
+        background-color: hotpink;
+        border: 2px solid black;
+        padding: 34px;
+        margin: 34px;
+      }
+      .container {
+        background-color: aqua;
+        padding: 34px;
+        margin: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="childcontainer">
+        <div class="child">I am child</div>
+      </span>
+    </div>
+    <script>
+      document.querySelector(".child").addEventListener("click", (e) => {
+        alert("I am clicked");
+        e.stopPropagation();
+      });
+      document
+        .querySelector(".childcontainer")
+        .addEventListener("click", (e) => {
+          alert("I am clicked");
+          e.stopPropagation();
+        });
+      document.querySelector(".container").addEventListener("click", (e) => {
+        alert("I am clicked");
+        // e.stopPropagation()
+      });
+      function getRandomColor() {
+        let val1 = Math.ceil(0 + Math.random() * 255);
+        let val2 = Math.ceil(0 + Math.random() * 255);
+        let val3 = Math.ceil(0 + Math.random() * 255);
+        return `rbg(${val1},${val2}, ${val3})`;
+      }
+      let a = setInterval(() => {
+        document.querySelector(".childcontainer").style.background =
+          getRandomColor();
+      }, 2000);
+      console.log(a)
+    </script>
+  </body>
+</html>

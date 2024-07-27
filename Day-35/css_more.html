@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More CSS Selectors</title>
+    <style>
+      /* .box:first-child { */
+      /* background-color: aqua; */
+      /* } */
+      /* .box::first-line { */
+      /* background-color: hotpink; */
+      /* } */
+      /* .boxes * { */
+      /* color: blue; */
+      /* border: 2px solid black; */
+      /* } */
+      /* p,a,div [data-x="x"] { */
+      /* background-color: crimson; */
+      /* } */
+      /* .box:nth-child(even){ */
+      /* background-color: purple; */
+      /* } */
+      /* .box:nth-last-child(2){ */
+      /* background-color: blueviolet; */
+      /* } */
+      .boxes::before {
+        background-color: blueviolet;
+        content: "Zubair is software engineer";
+        color: hotpink;
+      }
+      .boxes::after {
+        content: "Last years of life changing";
+        background-color: hotpink;
+      }
+      ::selection {
+        background-color: black;
+        color: white;
+      }
+      .box::first-letter {
+        background-color: aqua;
+      }
+      input::placeholder {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>More CSS Selectors</h1>
+    <div class="boxes">
+      <div data-x="x" class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eaque
+        natus architecto eum sint commodi exercitationem aperiam veritatis sed
+        itaque. Minima itaque voluptatum dignissimos modi repellat iusto id
+        recusandae quod.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        nihil quam error!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        nihil quam error!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        nihil quam error!
+      </div>
+      <input type="text" placeholder="enter your name" />
+    </div>
+  </body>
+</html>

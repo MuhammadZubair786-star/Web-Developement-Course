@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Objects or Position</title>
+    <style>
+      .container {
+        height: 440px;
+        width: 580px;
+        border: 2px solid black;
+        background-color: aquamarine;
+        background-image: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D);
+        background-repeat: no-repeat;
+      }
+      img{
+        object-position: top right;
+        height: 440px;
+        width: 580px;
+        /* object-fit: cover; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Objects</h1>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
